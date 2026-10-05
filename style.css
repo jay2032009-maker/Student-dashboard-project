@@ -1,0 +1,18 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f4f7fb;--card:#fff;--text:#182235;--muted:#718096;--primary:#315efb;--line:#e4e9f1}
+body{font-family:Arial,sans-serif;background:var(--bg);color:var(--text);display:flex}
+.sidebar{width:240px;min-height:100vh;background:#111827;color:#fff;padding:28px 18px;position:fixed;left:0;top:0}
+.brand{font-size:25px;font-weight:800;padding:0 14px 35px}.brand span{color:#6ea8ff}
+.sidebar a{display:block;color:#aeb8c8;padding:14px;border-radius:10px;margin:5px 0;text-decoration:none}.sidebar a:hover,.sidebar a.active{background:#24365b;color:#fff}
+.main{margin-left:240px;width:calc(100% - 240px);padding:28px 5%}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}.topbar h1{font-size:28px}.muted,.subject p,.task small,.profile-card span{color:var(--muted)}#menuBtn{display:none}
+.student-badge,.pill{background:#e8efff;color:#315efb;padding:9px 14px;border-radius:20px;font-weight:bold;font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.stat{background:var(--card);border:1px solid var(--line);padding:22px;border-radius:15px}.stat span,.stat small{display:block;color:var(--muted)}.stat strong{display:block;font-size:30px;margin:8px 0}
+.section{margin-top:32px}.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.section-head h2{font-size:24px}.label{font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:var(--primary);font-weight:bold;margin-bottom:4px}
+.attendance-box,.subject,.task,.profile-card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:22px}.attendance-box{display:flex;gap:50px;align-items:center}.circle{width:145px;height:145px;border-radius:50%;background:#eaf0ff;border:12px solid #315efb;display:flex;flex-direction:column;justify-content:center;align-items:center}.circle b{font-size:28px}.circle small{color:var(--muted)}
+.attendance-list{flex:1}.attendance-list div{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:13px 0}.attendance-list div:last-child{border:0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.subject h3{margin-bottom:5px}.bar{height:8px;background:#edf0f5;border-radius:20px;margin:18px 0 8px;overflow:hidden}.bar i{display:block;height:100%;background:#315efb;border-radius:20px}
+.task-list{display:grid;gap:12px}.task{display:flex;justify-content:space-between;align-items:center}.task small{display:block;margin-top:4px}.task button{border:0;padding:8px 12px;border-radius:20px;font-weight:bold}.done{background:#dcfce7;color:#16834b}.pending{background:#fff3d6;color:#a56a00}
+.profile-card{display:grid;grid-template-columns:1fr 1fr;gap:20px}.profile-card div{display:flex;flex-direction:column;gap:4px}footer{text-align:center;color:var(--muted);padding:40px 0 20px}
+@media(max-width:850px){.sidebar{transform:translateX(-100%);transition:.25s;z-index:5}.sidebar.open{transform:translateX(0)}.main{margin-left:0;width:100%;padding:22px}.topbar{gap:12px}.topbar h1{font-size:22px}#menuBtn{display:block;background:#111827;color:#fff;border:0;border-radius:8px;padding:9px 12px;font-size:18px}.cards{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.profile-card{grid-template-columns:1fr}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.attendance-box{flex-direction:column}.student-badge{display:none}}

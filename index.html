@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard | Jay Saxena</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">Student<span>Hub</span></div>
+    <a class="active" href="#dashboard">🏠 Dashboard</a>
+    <a href="#attendance">📊 Attendance</a>
+    <a href="#subjects">📚 Subjects</a>
+    <a href="#assignments">📝 Assignments</a>
+    <a href="#profile">👤 Profile</a>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button id="menuBtn">☰</button>
+      <div>
+        <p class="muted">Welcome back,</p>
+        <h1>Jay Saxena 👋</h1>
+      </div>
+      <div class="student-badge">B.Tech CSE</div>
+    </header>
+
+    <section id="dashboard">
+      <div class="cards">
+        <div class="stat"><span>CGPA</span><strong>8.7</strong><small>Current</small></div>
+        <div class="stat"><span>Attendance</span><strong>87%</strong><small>Overall</small></div>
+        <div class="stat"><span>Assignments</span><strong>12</strong><small>Completed</small></div>
+        <div class="stat"><span>Credits</span><strong>24</strong><small>This semester</small></div>
+      </div>
+    </section>
+
+    <section id="attendance" class="section">
+      <div class="section-head">
+        <div><p class="label">Academic Overview</p><h2>Attendance</h2></div>
+        <span class="pill">Good Standing</span>
+      </div>
+      <div class="attendance-box">
+        <div class="circle"><b>87%</b><small>Overall</small></div>
+        <div class="attendance-list">
+          <div><span>Data Structures</span><b>92%</b></div>
+          <div><span>Digital Electronics</span><b>86%</b></div>
+          <div><span>Mathematics</span><b>84%</b></div>
+          <div><span>Web Development</span><b>89%</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="subjects" class="section">
+      <div class="section-head"><div><p class="label">This Semester</p><h2>Subjects</h2></div></div>
+      <div class="grid">
+        <div class="subject"><h3>Data Structures</h3><p>DSA • 4 Credits</p><div class="bar"><i style="width:92%"></i></div><b>92% Attendance</b></div>
+        <div class="subject"><h3>Digital Electronics</h3><p>Electronics • 4 Credits</p><div class="bar"><i style="width:86%"></i></div><b>86% Attendance</b></div>
+        <div class="subject"><h3>Mathematics</h3><p>Engineering Math • 4 Credits</p><div class="bar"><i style="width:84%"></i></div><b>84% Attendance</b></div>
+        <div class="subject"><h3>Web Development</h3><p>Web Tech • 3 Credits</p><div class="bar"><i style="width:89%"></i></div><b>89% Attendance</b></div>
+      </div>
+    </section>
+
+    <section id="assignments" class="section">
+      <div class="section-head"><div><p class="label">Tasks</p><h2>Assignments</h2></div></div>
+      <div class="task-list">
+        <div class="task"><div><b>HTML Portfolio</b><small>Web Development • Due 08 Oct</small></div><button class="done">Completed</button></div>
+        <div class="task"><div><b>K-Map Design</b><small>Digital Electronics • Due 10 Oct</small></div><button class="pending">Pending</button></div>
+        <div class="task"><div><b>DSA Practice Set</b><small>Data Structures • Due 12 Oct</small></div><button class="pending">Pending</button></div>
+      </div>
+    </section>
+
+    <section id="profile" class="section profile">
+      <div class="section-head"><div><p class="label">Student Information</p><h2>Profile</h2></div></div>
+      <div class="profile-card">
+        <div><span>Name</span><b>Jay Saxena</b></div>
+        <div><span>Course</span><b>B.Tech Computer Science & Engineering</b></div>
+        <div><span>University</span><b>Bennett University</b></div>
+        <div><span>Focus</span><b>Programming & Full Stack Development</b></div>
+      </div>
+    </section>
+
+    <footer>StudentHub Concept • Created for portfolio demonstration</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
